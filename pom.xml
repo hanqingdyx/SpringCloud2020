@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.hq.springcloud</groupId>
-  <artifactId>springcloud2020</artifactId>
+  <artifactId>SpringCloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>springcloud2020</name>
+  <name>SpringCloud2020</name>
 
   <modules>
     <module>cloud-provider-payment8001</module>
@@ -17,6 +17,7 @@
       <module>cloud-eureka-server7001</module>
     <module>cloud-eureka-server7002</module>
       <module>cloud-provider-payment8002</module>
+    <module>cloud-consumer-feign-order80</module>
   </modules>
 
   <properties>
