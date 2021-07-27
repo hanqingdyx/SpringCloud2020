@@ -67,6 +67,7 @@ public class PaymentController {
 
     /**
      * 服务发现
+     *
      * @return
      */
     @GetMapping(value = "/payment/discovery")
@@ -82,11 +83,16 @@ public class PaymentController {
         return this.discoveryClient;
     }
 
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
+
     @GetMapping("/payment/feign/timeout")
-    public String paymentFeignTimeout(){
+    public String paymentFeignTimeout() {
         try {
             TimeUnit.SECONDS.sleep(3);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return serverPort;
